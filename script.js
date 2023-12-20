@@ -6,10 +6,14 @@ const searchButton = document.getElementById('search-button');
 function handleSearch() {
     const searchTerm = searchBar.value.trim();
 
+//Function to search in a new tab the specific searched item
+function newSearch() {
+    window.open(`https://www.google.com/search?q=${searchTerm}`, "_blank");
+}
     // Perform your search logic here
     // For this example, we'll display an alert
     if (searchTerm !== '') {
-        alert(`You searched for: ${searchTerm}`);
+        newSearch();
     } else {
         alert('Please enter a search term.');
     }
