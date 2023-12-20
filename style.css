@@ -124,7 +124,8 @@ footer {
     .search-container {
         float: none;
         text-align: center;
-        margin-top: 0;
+        padding: 0 10px 0 10px;
+
     }
 }
 
