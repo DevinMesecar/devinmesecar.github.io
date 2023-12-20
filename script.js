@@ -21,3 +21,5 @@ function newSearch() {
 
 // Attach the click event listener to the search button
 searchButton.addEventListener('click', handleSearch);
+
+// Will add more soon
