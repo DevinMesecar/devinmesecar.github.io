@@ -19,15 +19,19 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* Add padding for better spacing */
+}
+
 nav ul {
-    background-color: #333;
+    display: flex;
     list-style-type: none;
-    overflow: hidden;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav li {
-    float: left;
     margin: 0;
 }
 
@@ -37,12 +41,37 @@ nav a {
     color: #fff;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s, color 0.3s; /* Added color transition */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 nav a:hover {
     background-color: #555;
-    color: #000; /* Text color changes to black on hover */
+    color: #000;
+}
+
+.search-container {
+    margin-left: auto; /* Pushes the search container to the right */
+}
+
+#search-bar {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#search-btn {
+    padding: 8px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#search-btn:hover {
+    background-color: #777;
 }
 
 main {
@@ -127,4 +156,39 @@ footer {
         text-align: center;
         margin-top: 0;
     }
+}
+
+/* Additional styling for new features */
+.featured-image {
+    width: 100%;
+    max-height: 300px; /* Adjust as needed */
+    object-fit: cover;
+}
+
+.post-meta {
+    color: #555;
+}
+
+.social-share-buttons {
+    /* Style your social media sharing buttons */
+}
+
+.comment-section {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.comment-author {
+    font-weight: bold;
+}
+
+.comment-date {
+    color: #888;
 }
