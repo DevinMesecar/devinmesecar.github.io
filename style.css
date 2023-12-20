@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #666;
+    background-color: #333;
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -28,7 +28,7 @@ nav ul {
 
 nav li {
     float: left;
-    margin: 1;
+    margin: 0;
 }
 
 nav a {
@@ -37,11 +37,12 @@ nav a {
     color: #fff;
     text-align: center;
     text-decoration: none;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Added color transition */
 }
 
 nav a:hover {
-    background-color: #fff;
+    background-color: #555;
+    color: #000; /* Text color changes to black on hover */
 }
 
 main {
@@ -126,23 +127,4 @@ footer {
         text-align: center;
         margin-top: 0;
     }
-}
-
-/* Additional styling for new features */
-.featured-image {
-    width: 100%;
-    max-height: 300px; /* Adjust as needed */
-    object-fit: cover;
-}
-
-.post-meta {
-    color: #555;
-}
-
-.social-share-buttons {
-    /* Style your social media sharing buttons */
-}
-
-.comment-section {
-    /* Style your comment section */
 }
