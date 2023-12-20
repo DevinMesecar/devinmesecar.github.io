@@ -5,13 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bits and Bytes</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="path/to/your/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-xkAAiZYVVH1/dRzFb6LdSK1tuJb2Hw3OXMwKsRjstlf5hjY1eZOAj2evHdHSeO2sU+ROFVzJuY0yjVdZrHv3yg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         /* Additional inline styles can be added here if needed */
+        /* Additional styling for new features */
+        .featured-image {
+            width: 100%;
+            max-height: 300px; /* Adjust as needed */
+            object-fit: cover;
+        }
+
+        .post-meta {
+            color: #555;
+        }
+
+        .social-share-buttons {
+            /* Style your social media sharing buttons */
+        }
+
+        .comment-section {
+            /* Style your comment section */
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bits and Bytes</h1>
+        <h1><i class="fas fa-code"></i> Bits and Bytes</h1>
     </header>
 
     <nav>
@@ -29,15 +49,31 @@
 
     <main>
         <section class="blog-post">
+            <img src="path/to/featured-image1.jpg" alt="Blog Post Image 1" class="featured-image">
             <h2>Blog Post Title 1</h2>
             <p>Date: September 11, 2023</p>
+            <p class="post-meta">By John Doe | Category: Web Development</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <div class="social-share-buttons">
+                <!-- Social media sharing buttons go here -->
+            </div>
+            <div class="comment-section">
+                <!-- Comment section goes here -->
+            </div>
         </section>
 
         <section class="blog-post">
+            <img src="path/to/featured-image2.jpg" alt="Blog Post Image 2" class="featured-image">
             <h2>Blog Post Title 2</h2>
             <p>Date: September 12, 2023</p>
+            <p class="post-meta">By Jane Doe | Category: Design</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+            <div class="social-share-buttons">
+                <!-- Social media sharing buttons go here -->
+            </div>
+            <div class="comment-section">
+                <!-- Comment section goes here -->
+            </div>
         </section>
     </main>
 
