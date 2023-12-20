@@ -18,11 +18,7 @@ function newSearch() {
         alert('Please enter a search term.');
     }
 }
-
-function testButton {
-    console.log("its been clicked");
-}
 // Attach the click event listener to the search button
-searchButton.addEventListener('click', testButton);
+searchButton.addEventListener('click', handleSearch);
 
 // Will add more soon
