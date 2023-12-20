@@ -19,7 +19,10 @@ function newSearch() {
     }
 }
 
+function testButton {
+    console.log("its been clicked");
+}
 // Attach the click event listener to the search button
-searchButton.addEventListener('click', handleSearch);
+searchButton.addEventListener('click', testButton);
 
 // Will add more soon
