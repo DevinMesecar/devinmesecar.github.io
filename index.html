@@ -25,7 +25,23 @@
         }
 
         .comment-section {
-            /* Style your comment section */
+            margin-top: 20px;
+            border-top: 1px solid #ccc;
+            padding-top: 20px;
+        }
+
+        .comment {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .comment-author {
+            font-weight: bold;
+        }
+
+        .comment-date {
+            color: #888;
         }
     </style>
 </head>
@@ -58,23 +74,36 @@
                 <!-- Social media sharing buttons go here -->
             </div>
             <div class="comment-section">
-                <!-- Comment section goes here -->
+                <h3>Comments</h3>
+
+                <!-- Example comments -->
+                <div class="comment">
+                    <p class="comment-author">John Doe</p>
+                    <p class="comment-date">Posted on September 15, 2023</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                </div>
+
+                <div class="comment">
+                    <p class="comment-author">Jane Doe</p>
+                    <p class="comment-date">Posted on September 16, 2023</p>
+                    <p>Another comment here...</p>
+                </div>
+
+                <!-- Add a form for users to submit new comments -->
+                <form id="comment-form">
+                    <label for="comment-name">Your Name:</label>
+                    <input type="text" id="comment-name" name="comment-name" required>
+
+                    <label for="comment-content">Your Comment:</label>
+                    <textarea id="comment-content" name="comment-content" required></textarea>
+
+                    <button type="submit">Submit Comment</button>
+                </form>
             </div>
         </section>
 
-        <section class="blog-post">
-            <img src="https://thumbs.dreamstime.com/b/hacker-looking-camera-face-mask-dark-theme-wallpaper-hacker-looking-camera-face-mask-dark-theme-wallpaper-291465611.jpg" alt="Blog Post Image 2" class="featured-image">
-            <h2>Blog Post Title 2</h2>
-            <p>Date: September 12, 2023</p>
-            <p class="post-meta">By Jane Doe | Category: Design</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-            <div class="social-share-buttons">
-                <!-- Social media sharing buttons go here -->
-            </div>
-            <div class="comment-section">
-                <!-- Comment section goes here -->
-            </div>
-        </section>
+        <!-- Repeat the structure for additional blog posts if needed -->
+
     </main>
 
     <footer>
